@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>CareMate — Medication Management</title>
+<meta name="description" content="CareMate helps patients and caregivers stay on top of every dose, every day." />
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="shortcut icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  /* Prevents a flash of unstyled canvas while fonts/paint settle */
+  #root:empty { min-height: 100vh; background: #F8FAFC; }
+  html.dark #root:empty { background: #0B1220; }
+</style>
+</head>
+<body class="bg-canvas dark:bg-dcanvas text-ink dark:text-slate-100 antialiased transition-colors duration-300">
+<div id="root"></div>
+
+<script src="vendor_react.js"></script>
+<script src="vendor_react-dom.js"></script>
+<script src="qrcode.min.js"></script>
+<script src="html5-qrcode.min.js"></script>
+<script src="jspdf.umd.min.js"></script>
+<script src="tesseract.min.js"></script>
+<script src="supabase.min.js"></script>
+<script src="config.js"></script>
+<script src="app.compiled.js"></script>
+</body>
+</html>
